@@ -1,6 +1,6 @@
 4chan-loopvid
 =============
-A 4chan userscript. http://userscripts.org/scripts/show/292274
+A 4chan userscript. http://userscripts.org/scripts/show/292274 <br />
 Gives you the option to embed HTML5 videos such as gfycats, loopvids and eventually instagram.
 
 <h3>Requirements:</h3> 
