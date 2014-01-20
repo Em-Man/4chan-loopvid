@@ -2,12 +2,11 @@
 // @name        4chan loopvid
 // @namespace   4chan-loopvid
 // @description html5 video embedder for 4chan
-// @version     0.1.3
+// @version     0.1.4
 // @updateURL   http://userscripts.org/scripts/source/292274.meta.js
 // @icon        http://i.imgur.com/JHVzK.png
 // @match       *://boards.4chan.org/*
 // @require     http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js
-// @grant       none
 // @license     MIT
 // @run-at      document-end
 // ==/UserScript==
