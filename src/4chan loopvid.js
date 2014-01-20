@@ -21,8 +21,6 @@ function embedder($jNode) {
     
     if (!groups) {return;} //if no matches were found, exit function
     $jNode.html($jNode.attr('href')); //I need to add this because 4chan x is weird
-    var link = $jNode.attr('href').toLowerCase();
-    var $embedbtn;
     //workaround to hide overlapping embed buttons
     var $nextsib = $jNode.next();
     var nextsibclass = $nextsib.attr('class');
@@ -30,6 +28,8 @@ function embedder($jNode) {
         $nextsib.hide();
     }
     //create an embedbtn and insert it after the link
+    var link = $jNode.attr('href').toLowerCase();
+    var $embedbtn;
     if (link.indexOf('gfycat') >= 0) {
         $embedbtn = getEmbedbtn('gfy');
         $embedbtn.insertAfter($jNode);
