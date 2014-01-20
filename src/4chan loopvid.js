@@ -1,12 +1,14 @@
 // ==UserScript==
-// @name 4chan loopvid embedder
-// @version 0.1.0
-// @namespace 4chan-loopvid
+// @name        4chan loopvid
+// @version     0.1.0
+// @namespace   4chan-loopvid
 // @description html5 video embedder for 4chan
-// @icon http://i.imgur.com/JHVzK.png
-// @match *://boards.4chan.org/*
-// @require http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js
-// @run-at document-end
+// @license     MIT
+// @icon        http://i.imgur.com/JHVzK.png
+// @match       *://boards.4chan.org/*
+// @require     http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js
+// @grant       none
+// @run-at      document-end
 // ==/UserScript==
 
 this.$ = this.jQuery = jQuery.noConflict(true);
@@ -18,7 +20,6 @@ function embedder($jNode) {
     var groups = hashRe.exec($jNode.attr('href')); //[1]= pf/kd, [2]=vidid1, [3]=vidid2
     
     if (!groups) {return;} //if no matches were found, exit function
-    //if matches were found, create an embedbtn and insert it after the link
     $jNode.html($jNode.attr('href')); //I need to add this because 4chan x is weird
     var link = $jNode.attr('href').toLowerCase();
     var $embedbtn;
@@ -28,7 +29,7 @@ function embedder($jNode) {
     if (nextsibclass == 'vidEmbedbtn'|| nextsibclass == 'embedder') {
         $nextsib.hide();
     }
-    
+    //create an embedbtn and insert it after the link
     if (link.indexOf('gfycat') >= 0) {
         $embedbtn = getEmbedbtn('gfy');
         $embedbtn.insertAfter($jNode);
