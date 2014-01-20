@@ -10,7 +10,7 @@
 // ==/UserScript==
 
 this.$ = this.jQuery = jQuery.noConflict(true);
-waitForKeyElements(".linkify", embedder);
+waitForKeyElements(".linkify, .linkified", embedder);
 //--- This function is called for on each detected class=linkify element
 
 function embedder($jNode) {
