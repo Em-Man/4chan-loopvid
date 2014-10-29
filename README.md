@@ -1,6 +1,8 @@
-4chan-loopvid
+4chan-loopvid (DEPRECATED)
 =============
-A 4chan userscript. http://userscripts.org/scripts/show/292274 <br />
+
+
+A 4chan userscript used in combination with 4chan x. http://userscripts.org/scripts/show/292274 <br />
 Gives you the option to embed HTML5 videos such as gfycats, loopvids and eventually instagram.
 
 <h3>Requirements:</h3> 
